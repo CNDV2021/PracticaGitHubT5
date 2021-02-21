@@ -1,0 +1,10 @@
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\bin\Debug\Proyecto Practica Gitub T5.exe.config
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\bin\Debug\Proyecto Practica Gitub T5.exe
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\bin\Debug\Proyecto Practica Gitub T5.pdb
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\obj\Debug\Proyecto Practica Gitub T5.csprojAssemblyReference.cache
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\obj\Debug\Proyecto_Practica_Gitub_T5.Form1.resources
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\obj\Debug\Proyecto_Practica_Gitub_T5.Properties.Resources.resources
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\obj\Debug\Proyecto Practica Gitub T5.csproj.GenerateResource.cache
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\obj\Debug\Proyecto Practica Gitub T5.csproj.CoreCompileInputs.cache
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\obj\Debug\Proyecto Practica Gitub T5.exe
+C:\Users\noedi\source\repos\CNDV2021\PracticaGithubT5\Proyecto Practica Gitub T5\Proyecto Practica Gitub T5\obj\Debug\Proyecto Practica Gitub T5.pdb
