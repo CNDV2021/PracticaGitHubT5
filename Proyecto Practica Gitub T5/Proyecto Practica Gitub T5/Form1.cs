@@ -1,25 +1,32 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Proyecto_Practica_Gitub_T5
+﻿namespace Proyecto_Practica_Gitub_T5
 {
+    using System;
+    using System.Collections;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Defines the <see cref="Form1" />.
+    /// </summary>
     public partial class Form1 : Form
     {
-        Alumnos misAlumnos = new Alumnos();
+        /// <summary>
+        /// Defines the misAlumnos.
+        /// </summary>
+        internal readonly Alumnos misAlumnos = new Alumnos();
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// The button1_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void button1_Click(object sender, EventArgs e)
         {
             Alumno miAlumno = new Alumno();
@@ -48,15 +55,33 @@ namespace Proyecto_Practica_Gitub_T5
         }
     }
 
-    class Alumno
+    /// <summary>
+    /// Defines the <see cref="Alumno" />.
+    /// </summary>
+    internal class Alumno
     {
+        /// <summary>
+        /// Defines the nombre.
+        /// </summary>
         private string nombre;
+
+        /// <summary>
+        /// Defines the nota.
+        /// </summary>
         private int nota;
+
+        /// <summary>
+        /// Gets or sets the Nombre.
+        /// </summary>
         public string Nombre
         {
             get { return nombre; }
             set { nombre = value; }
         }
+
+        /// <summary>
+        /// Gets or sets the Nota.
+        /// </summary>
         public int Nota
         {
             get { return nota; }
@@ -66,6 +91,10 @@ namespace Proyecto_Practica_Gitub_T5
                     nota = value;
             }
         }
+
+        /// <summary>
+        /// Gets the Aprobado.
+        /// </summary>
         public Boolean Aprobado
         {
             get
@@ -78,12 +107,22 @@ namespace Proyecto_Practica_Gitub_T5
         }
     }
 
-    class Alumnos
+    /// <summary>
+    /// Defines the <see cref="Alumnos" />.
+    /// </summary>
+    internal class Alumnos
     {
-        private ArrayList listaAlumnos = new ArrayList();
+        /// <summary>
+        /// Defines the listaAlumnos.
+        /// </summary>
+        private readonly ArrayList listaAlumnos = new ArrayList();
 
         // Agrega un nuevo alumno a la lista
-        //        
+        //
+        /// <summary>
+        /// The Agregar.
+        /// </summary>
+        /// <param name="alu">The alu<see cref="Alumno"/>.</param>
         public void Agregar(Alumno alu)
         {
             listaAlumnos.Add(alu);
@@ -91,6 +130,11 @@ namespace Proyecto_Practica_Gitub_T5
 
         // Devuelve el alumno que está en la posición num
         //
+        /// <summary>
+        /// The Obtener.
+        /// </summary>
+        /// <param name="num">The num<see cref="int"/>.</param>
+        /// <returns>The <see cref="Alumno"/>.</returns>
         public Alumno Obtener(int num)
         {
             if (num >= 0 && num <= listaAlumnos.Count)
@@ -102,6 +146,9 @@ namespace Proyecto_Practica_Gitub_T5
 
         // Devuelve la nota media de los alumnos
         //
+        /// <summary>
+        /// Gets the Media.
+        /// </summary>
         public float Media
         {
             get
