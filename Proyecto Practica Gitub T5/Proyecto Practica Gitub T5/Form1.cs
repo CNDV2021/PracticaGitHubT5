@@ -4,19 +4,13 @@
     using System.Collections;
     using System.Windows.Forms;
 
-    /// <summary>
-    /// Defines the <see cref="Form1" />.
-    /// </summary>
+    
     public partial class Form1 : Form
     {
-        /// <summary>
-        /// Defines the misAlumnos.
-        /// </summary>
+        
         internal readonly Alumnos misAlumnos = new Alumnos();
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Form1"/> class.
-        /// </summary>
+        
         public Form1()
         {
             InitializeComponent();
@@ -56,22 +50,22 @@
     }
 
     /// <summary>
-    /// Defines the <see cref="Alumno" />.
+    /// Inicializa la instacia de la clase Alumno
     /// </summary>
     internal class Alumno
     {
         /// <summary>
-        /// Defines the nombre.
+        /// Define el nombre.
         /// </summary>
         private string nombre;
 
         /// <summary>
-        /// Defines the nota.
+        /// Define la nota.
         /// </summary>
         private int nota;
 
         /// <summary>
-        /// Gets or sets the Nombre.
+        /// Establece y obtiene un valor de tipo string(nombre)
         /// </summary>
         public string Nombre
         {
@@ -79,9 +73,10 @@
             set { nombre = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the Nota.
-        /// </summary>
+       /// <summary>
+       /// Obtiene la nota del alumno
+       /// </summary>
+       /// <value>Especifica la nota del alumno</value>
         public int Nota
         {
             get { return nota; }
@@ -93,8 +88,9 @@
         }
 
         /// <summary>
-        /// Gets the Aprobado.
+        /// Obtiene el resultado 
         /// </summary>
+        /// <returns>Devuelve un valor booleano del aprobado de un alumno</returns>
         public Boolean Aprobado
         {
             get
@@ -108,33 +104,33 @@
     }
 
     /// <summary>
-    /// Defines the <see cref="Alumnos" />.
+    /// Inicializa una nueva instancia de la clase Alumnos
     /// </summary>
     internal class Alumnos
     {
         /// <summary>
-        /// Defines the listaAlumnos.
+        /// Define la lista de Alumnos.
         /// </summary>
         private readonly ArrayList listaAlumnos = new ArrayList();
 
-        // Agrega un nuevo alumno a la lista
-        //
+        
+        
         /// <summary>
-        /// The Agregar.
+        /// Método que agraga  un nuevo alumno a la lista
         /// </summary>
-        /// <param name="alu">The alu<see cref="Alumno"/>.</param>
+        /// <param name="alu">Variable que se añade a la lista<see cref="Alumno"/>.</param>
         public void Agregar(Alumno alu)
         {
             listaAlumnos.Add(alu);
         }
 
-        // Devuelve el alumno que está en la posición num
+
         //
         /// <summary>
-        /// The Obtener.
+        ///Prporciona el método necesario para agregar alumnos a una lista.
         /// </summary>
-        /// <param name="num">The num<see cref="int"/>.</param>
-        /// <returns>The <see cref="Alumno"/>.</returns>
+        /// <param name="num">Variable de tipo int que devuelve una determinada posición</param>
+        /// <returns> Devuelve el alumno que está en la posición num.</returns>
         public Alumno Obtener(int num)
         {
             if (num >= 0 && num <= listaAlumnos.Count)
@@ -144,11 +140,12 @@
             return null;
         }
 
-        // Devuelve la nota media de los alumnos
+        // 
         //
         /// <summary>
-        /// Gets the Media.
+        /// Proporciona la propiedad y el método necesario para obtener la nota media.
         /// </summary>
+        /// <returns>Devuelve la nota media de los alumnos.</returns>
         public float Media
         {
             get
